@@ -1,0 +1,178 @@
+body {
+    min-height: 100vh;
+    line-height: 1.5;
+    margin: 0;
+    background-image: url(./dist/images/bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 980px;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 15px;
+}
+
+.main {
+    min-height: 100vh;
+    line-height: 1.5;
+    margin: 0;
+    background-image: url(./dist/images/bg-pattern-top-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 580px;
+}
+
+.proof--section {
+    padding: 70px 10%;
+}
+
+.top {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.details {
+    flex: 50%;
+}
+
+.details--heading {
+    margin: 0;
+    font-size: 52px;
+    color: hsl(300, 43%, 22%);
+    letter-spacing: -2px;
+    line-height: 0.9;
+}
+
+.details--text {
+    color: hsl(303, 10%, 53%);
+    font-weight: 500;
+}
+
+.rating {
+    flex: 50%;
+    margin-top: 40px;
+}
+
+.reviews {
+    display: flex;
+    background-color: hsl(300, 24%, 96%);
+    width: 60%; 
+    border-radius: 8px;
+    padding: 15px 30px;
+    margin-bottom: 15px;
+}
+
+.reviews--text {
+    margin-left: 25px;
+    font-weight: 700;
+    color: hsl(300, 43%, 22%);
+}
+
+.reviews img {
+    height: 14px;
+    padding-right: 2px;
+}
+
+#review {
+    margin-inline: auto 80px;
+}
+
+#guru {
+    margin-inline: auto 40px;
+}
+
+#best-tech {
+    margin-left: auto;
+}
+
+.cards--section {
+    display: flex;
+    gap: 15px;
+}
+
+.card {
+    background-color: hsl(300, 43%, 22%);
+    color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    padding: 30px;
+    height: 60%;
+}
+
+.card--head {
+    display: flex;
+}
+
+.person {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 25px;
+}
+
+.person--name {
+    font-weight: 500;
+}
+
+.person--status {
+    color: hsl(333, 80%, 67%);
+}
+
+.person-2 {
+    margin-top: 20px;
+}
+
+.person-3 {
+    margin-top: 40px;
+}
+
+@media screen and (max-width: 600px) {
+    .proof--section {
+        display: grid;
+    }
+
+    .top {
+        display: grid;
+        align-items: center;
+    }
+
+    .details {
+        text-align: center;
+    }
+
+    .reviews {
+        display: grid;
+        justify-content: center;
+        width: auto;
+    }
+
+    #review {
+        margin-inline: auto;
+    }
+
+    #guru {
+        margin-inline: auto;
+    }
+    
+    #best-tech {
+        margin-left: 0;
+    }
+
+    .cards--section {
+        display: grid;
+        gap: 0;
+    }
+
+    .star {
+        margin-left: 30px;
+    }
+
+    .reviews--text {
+        margin-left: 0;
+    }
+
+    .person-2 {
+        margin-top: 0;
+    }
+
+    .person-3 {
+        margin-top: 0;
+    }
+}
